@@ -1,0 +1,54 @@
+.container {
+  min-height: inherit;
+}
+
+.row {
+  min-height: inherit;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.dark-box {
+  max-width: 700px;
+  min-height: 200px;
+  width: 100%;
+  background-color: white;
+  border: 2px grey solid;
+}
+
+
+.strip {
+  min-height: 300px;
+  background-image: url(../images/cover_Pepole.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.strip h1 {
+
+  color: #FFFFFF;
+  font-size: 48pt;
+
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  color: #FFFFFF;
+
+
+}
+
+header {
+  min-height: 40px;
+  background-color: white;
+  color: #333;
+}

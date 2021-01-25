@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepole List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pepole.css">
+    <script src="js/main.js"></script>
+    <script src="js/pepole.js"></script>
+</head>
+
+<body>
+
+    <!----------------------------------------------light box------------------------------------------------------------->
+
+    <div id="id_dark" class="dark container-fluid center d-none">
+        <div class="dark-box text-center">
+            <img src="https://image.tmdb.org/t/p/w500/pIjnoUnXdLpROFzIRPNziPzgBUp.jpg" class="w-100 mb-3">
+            <h2>Caption</h2>
+            <p class="p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta blanditiis ut amet esse nihil
+                aspernatur
+                omnis delectus rem? Quos vero porro qui unde similique! Maiores ipsum culpa quibusdam alias?
+            </p>
+            <button onclick="onCloseDarkWindow()" class="btn btn-danger mb-3">close</button>
+        </div>
+    </div>
+
+    <!----------------------------------------------light box------------------------------------------------------------->
+
+
+
+    <div class="strip container-fluid">
+        <div class="container center">
+            <h1 class="text-white display-4">Pepole</h1>
+        </div>
+    </div>
+
+    <header class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-light bg-light">
+                <div>
+                    <button data-cat="1" onclick="onChangeCat(event)" class="btn btn-warning">Workers</button>
+                    <button data-cat="2" onclick="onChangeCat(event)" class="btn btn-warning">Managers</button>
+                    <button data-cat="3" onclick="onChangeCat(event)" class="btn btn-warning">Juniors</button>
+                </div>
+
+
+                <form class="form-inline">
+                    <input id="id_search" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search" oninput="OnSearchPepole()">
+                    <button class="btn btn-outline-dark my-2 my-sm-0">Search</button>
+
+                    <select id="id_sort" class="form-control ml-3" onchange="OnSearchPepole()">
+                        <option value="">Sort by...</option>
+                        <option value="email">Email</option>
+                        <option value="nat">Nationality</option>
+                        <option value="gender">Gender</option>
+                    </select>
+                </form>
+            </nav>
+
+
+            <div id="id_row" class="row justify-content-between p-3">
+                <!-- <div class="card col-md-4 p-0 bg-warning text-white">
+                    <img src="images/thai.jpg" class="img-fluid center" style="width: 128px;">
+                    <div class="card-body">
+                        <h4 class="card-title text-right">ציטוט אהוב שלי</h4>
+                        <p class="card-text text-right"> "חיה כאילו זה יומך האחרון, למד כאילו תחיה לנצח."
+                            <span class="text-dark"> מוהנדס קרמצ'נד גנדי</span></p>
+                        <button class="btn btn-outline-dark">More info</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+</body>
+
+</html>
