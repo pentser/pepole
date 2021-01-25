@@ -1,3 +1,3 @@
 # Pepole
 
-![Demo (images/demo.gif)]
+![Demo](images/demo.gif)
